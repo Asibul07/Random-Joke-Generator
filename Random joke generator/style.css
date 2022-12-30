@@ -1,0 +1,89 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  a {
+    color: #111;
+    text-decoration: none;
+}
+ /* button */
+  
+  .btn { 
+    font-family: Teko; 
+    font-weight: 0; 
+    font-size: 16px; 
+    color: #ffffff; 
+    background: linear-gradient(90deg, #0066CC 0%, #d62828 100%); 
+    padding: 10px 47px; 
+    border: none; 
+    box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+    border-radius: 22px 50px;
+    transition : 327ms;
+    transform: translateY(0);
+    }
+    
+  .btn:hover{ 
+    transition : 327ms;
+    padding: 10px 50px;
+    transform : translateY(-0px);
+    background: linear-gradient(90deg, #0066CC 0%, #d62828 100%);
+    color: #ffffff;
+    border: none;
+    }
+
+  /* body */
+  body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-image: radial-gradient(circle, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center; /* horizontally center */
+    align-items: center; /* vertically center */
+    text-align: center;
+  }
+  
+  /* container */
+  .container {
+    width: 600px;
+    height: fit-content;
+    padding: 50px 20px; /* top-bottom left-right */
+    background-image: linear-gradient(to right bottom, #051937, #004d7a, #008793, #00bf72, #a8eb12);  
+    border-radius: 29px; 
+}
+  
+  /* .joke-text */
+  /* h1 */
+  h1 {
+    font-size: 10vw; /* make our h1 tag larger */
+    font-family: sans-serif; /* choosing our font */
+    background: linear-gradient(to right, rgba(255, 215, 255, 0) 0%, rgba(225, 255, 255, 0.5) 20%, rgba(255, 255, 255, 0) 61%), linear-gradient(rgb(97, 183, 217) 52%, rgb(224, 246, 255) 60%, rgb(78, 99, 132) 61%); /* you can change the colors based on your preference */
+    background-clip: text; /*it defines how far the background should extend within an element, here we set it to text */
+    -webkit-background-clip: text; /*for browsers compatibility */
+    -webkit-text-fill-color: transparent; /* specifies the fill color of text characters. We use transparent to use the background as our text fill  */
+    animation: wave 2000ms ease alternate infinite;
+    transition: all 0.4s ease;
+    }
+    
+   @keyframes wave {
+     0% {
+     background-position: 0 0;
+     }
+     100% {
+     background-position: 50vw 10px;
+     }
+    }
+  
+  .joke-text {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    border-radius: 29px; 
+   }
+
+
+
+
+
